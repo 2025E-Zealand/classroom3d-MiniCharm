@@ -16,6 +16,10 @@ namespace ClassRoomNet60
         public Studerende(string navn, int fødselsMåned, int fødselsDag)
         {
             Navn = navn;
+            if (FødselsdagsMåned < 12) 
+            {
+                throw new Exception("Ugyldig måned");
+            }
             FødselsdagsMåned = fødselsMåned;
             Fødselsdag = fødselsDag;
         }
