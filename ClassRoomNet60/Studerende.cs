@@ -24,5 +24,24 @@ namespace ClassRoomNet60
             return $"{Navn}: Fødselsdag {Fødselsdag}/{FødselsdagsMåned}";
         }
 
+        public string GetSeasonForBirthMonth() 
+        {
+            switch (FødselsdagsMåned) 
+            {
+                case 1: return ("Vinter");
+                case 2: return ("Vinter");
+                case 3: return ("Forår");
+                case 4: return ("Forår");
+                case 5: return ("Forår");
+                case 6: return ("Sommer");
+                case 7: return ("Sommer");
+                case 8: return ("Sommer");
+                case 9: return ("Efterår");
+                case 10: return ("Efterår");
+                case 11: return ("EfterÅr");
+                case 12: return ("Vinter");
+                default: throw new Exception("Ikke godkendt måned:"+Fødselsdag); 
+            }
+        }
     }
 }
