@@ -38,7 +38,7 @@ namespace ClassRoomNet60
                 case 8: return ("Sommer");
                 case 9: return ("Efterår");
                 case 10: return ("Efterår");
-                case 11: return ("EfterÅr");
+                case 11: return ("Efterår");
                 case 12: return ("Vinter");
                 default: throw new Exception("Ikke godkendt måned:"+Fødselsdag); 
             }

@@ -22,3 +22,5 @@ foreach(Studerende s in BKlasseListe)
 {
     Console.WriteLine(s.ToString());
 }
+
+klasse1.Count();
