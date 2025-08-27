@@ -19,6 +19,10 @@ namespace ClassRoomNet60
             FødselsdagsMåned = fødselsMåned;
             Fødselsdag = fødselsDag;
         }
+        public override string ToString()
+        {
+            return $"{Navn}: Fødselsdag {Fødselsdag}/{FødselsdagsMåned}";
+        }
 
     }
 }
